@@ -50,6 +50,8 @@ defmodule BulmaComponents.Button do
   # Rest
   attr :rest, :global, include: ~w(disabled)
 
+  slot :inner_block, required: true
+
   @is_key_attrs [
     :outlined,
     :inverted,

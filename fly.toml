@@ -3,7 +3,6 @@
 app = "phx-bulma-components"
 kill_signal = "SIGTERM"
 kill_timeout = 5
-processes = []
 
 [env]
   PHX_HOST = "phx-bulma-components.fly.dev"

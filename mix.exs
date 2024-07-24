@@ -37,6 +37,8 @@ defmodule BulmaComponents.MixProject do
       {:gettext, "~> 0.24"},
       {:mime, "~> 2.0"},
       {:phoenix_live_view, "~> 0.20"},
+      {:phoenix_html, "~> 4.0"},
+
       # Dev/test dependencies
       {:credo, "~> 1.7", only: [:dev, :test]},
       {:jason, "~> 1.4", only: [:dev, :test]},
