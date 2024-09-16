@@ -33,6 +33,7 @@ defmodule BulmaComponents.Input do
       <.input name="my-input" errors={["oh no!"]} />
   """
   attr :id, :any, default: nil
+  attr :name, :any
   attr :label, :string, default: nil
   attr :value, :any
 
@@ -220,9 +221,9 @@ defmodule BulmaComponents.Input do
     # with our gettext backend as first argument. Translations are
     # available in the errors.po file (as we use the "errors" domain).
     if count = opts[:count] do
-      Gettext.dngettext(StorybookWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(BulmaComponents.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(StorybookWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(BulmaComponents.Gettext, "errors", msg, opts)
     end
   end
 

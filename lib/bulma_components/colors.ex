@@ -1,4 +1,7 @@
 defmodule BulmaComponents.Colors do
+  @moduledoc """
+  Bulma color palette.
+  """
   @theme [
     :primary,
     :link,
@@ -24,7 +27,7 @@ defmodule BulmaComponents.Colors do
 
   ## Examples
 
-      iex> CoreComponents.colors()
+      iex> BulmaComponents.colors()
       #{inspect(@colors)}
   """
   def colors, do: @colors
@@ -34,7 +37,7 @@ defmodule BulmaComponents.Colors do
 
   ## Examples
 
-      iex> CoreComponents.monochrome()
+      iex> BulmaComponents.monochrome()
       #{inspect(@monochrome)}
   """
   def monochrome, do: @monochrome
@@ -44,7 +47,7 @@ defmodule BulmaComponents.Colors do
 
   ## Examples
 
-      iex> CoreComponents.theme()
+      iex> BulmaComponents.theme()
       #{inspect(@theme)}
   """
   def theme, do: @theme
