@@ -33,7 +33,7 @@ defmodule BulmaComponents.MixProject do
   defp deps do
     [
       # Component dependencies
-      {:bulma, "~> 0.9.4"},
+      {:bulma, github: "suranyami/bulma-elixir"},
       {:gettext, "~> 0.24"},
       {:mime, "~> 2.0"},
       {:phoenix_live_view, "~> 0.20"},

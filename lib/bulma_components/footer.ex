@@ -21,10 +21,6 @@ defmodule BulmaComponents.Footer do
         </div>
         <div class="level-left"><.icon name="instagram" size={:large} color="brand" /></div>
 
-        <p>
-          Reflectal acknowledges the traditional custodians of the land on which we live and work, the Whadjuk Noongar people.
-          We acknowledge and respect their continuing culture and the contribution they make to the life of this city and this region.
-        </p>
         <div class="level">
           <div class="level-left">
             <div class="level-item">Privacy Policy</div>

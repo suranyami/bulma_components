@@ -25,13 +25,6 @@ defmodule BulmaComponents.Navbar do
     ~H"""
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://reflectal.au">
-          <img
-            src="https://www.reflectal.au/wp-content/uploads/2023/03/SPS_Reflectal__Re_Icon_Blue-13-150x150.png"
-            height="46"
-          />
-        </a>
-
         <a
           role="button"
           class="navbar-burger"
