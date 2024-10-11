@@ -8,7 +8,8 @@
 import Config
 
 config :storybook,
-  generators: [timestamp_type: :utc_datetime]
+  generators: [timestamp_type: :utc_datetime],
+  gettext: StorybookWeb.Gettext
 
 # Configures the endpoint
 config :storybook, StorybookWeb.Endpoint,
