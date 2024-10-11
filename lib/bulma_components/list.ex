@@ -46,18 +46,18 @@ defmodule BulmaComponents.List do
 
   """
 
-  slot :item, required: true do
-    attr(:title, :string, required: true)
-  end
+  # slot :item, required: true do
+  #   attr(:title, :string, required: true)
+  # end
 
-  def definition_list(assigns) do
-    ~H"""
-    <dl>
-      <%= for item <- @item do %>
-        <dt class="is-bold"><%= item.title %></dt>
-        <dd><%= render_slot(item) %></dd>
-      <% end %>
-    </dl>
-    """
-  end
+  # def definition_list(assigns) do
+  #   ~H"""
+  #   <dl>
+  #     <%= for item <- @item do %>
+  #       <dt class="is-bold"><%= item.title %></dt>
+  #       <dd><%= render_slot(item) %></dd>
+  #     <% end %>
+  #   </dl>
+  #   """
+  # end
 end
