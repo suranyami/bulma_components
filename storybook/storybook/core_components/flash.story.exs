@@ -1,9 +1,12 @@
-defmodule Storybook.CoreComponents.Flash do
+defmodule Storybook.BulmaComponents.Flash do
   use PhoenixStorybook.Story, :component
-  alias StorybookWeb.CoreComponents
+  alias BulmaComponents.{Button, Flash, JsCommands}
 
-  def function, do: &CoreComponents.flash/1
-  def imports, do: [{CoreComponents, [button: 1, show: 1]}]
+  def function, do: &Flash.flash/1
+  def imports, do: [
+    {Button, [button: 1]},
+    {JsCommands, [show: 1]}
+  ]
 
   def template do
     """

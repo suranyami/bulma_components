@@ -84,7 +84,7 @@ defmodule StorybookWeb do
       # HTML escaping functionality
       import Phoenix.HTML
       # Core UI components and translation
-      import StorybookWeb.CoreComponents
+      # import StorybookWeb.CoreComponents
       import StorybookWeb.Gettext
 
       # Shortcut for generating JS commands

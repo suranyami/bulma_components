@@ -1,6 +1,5 @@
-defmodule Storybook.Examples.CoreComponents do
+defmodule Storybook.Examples.BulmaComponents do
   use PhoenixStorybook.Story, :example
-  import StorybookWeb.CoreComponents
 
   alias Phoenix.LiveView.JS
 

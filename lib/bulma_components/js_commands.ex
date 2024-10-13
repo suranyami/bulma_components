@@ -5,8 +5,6 @@ defmodule BulmaComponents.JsCommands do
 
   alias Phoenix.LiveView.JS
 
-  ## JS Commands
-
   def show(js \\ %JS{}, selector) do
     JS.show(js,
       to: selector,

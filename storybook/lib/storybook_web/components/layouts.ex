@@ -1,5 +1,5 @@
 defmodule StorybookWeb.Layouts do
   use StorybookWeb, :html
-  use BulmaComponents
+  import BulmaComponents.Flash
   embed_templates "layouts/*"
 end

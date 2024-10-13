@@ -1,4 +1,4 @@
-defmodule Storybook.CoreComponents.Input do
+defmodule Storybook.BulmaComponents.Input do
   use PhoenixStorybook.Story, :component
   alias BulmaComponents.{Form, Input}
 
@@ -19,20 +19,32 @@ defmodule Storybook.CoreComponents.Input do
       %{
         color: "primary",
         icon: "font",
-        icon_color: "success",
+        icon_color: "error",
         icon_size: :small,
         icon_align: :left,
         errors: ["This is an error message"]
       }
     ],
     [
-      :text,
+      :password,
       %{
-        color: "primary",
-        icon: "font",
-        icon_color: "success",
+        color: "danger",
+        icon: "lock",
+        icon_color: "danger",
         icon_size: :small,
-        icon_align: :left
+        icon_align: :left,
+        type: "password"
+      }
+    ],
+    [
+      :date,
+      %{
+        color: "info",
+        icon: "calendar",
+        icon_color: "info",
+        icon_size: :small,
+        icon_align: :left,
+        type: "date"
       }
     ]
 

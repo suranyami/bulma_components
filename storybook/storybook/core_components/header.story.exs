@@ -1,9 +1,9 @@
-defmodule Storybook.CoreComponents.Header do
+defmodule Storybook.BulmaComponents.Header do
   use PhoenixStorybook.Story, :component
-  alias StorybookWeb.CoreComponents
+  alias BulmaComponents.{Button, Header}
 
-  def function, do: &CoreComponents.header/1
-  def imports, do: [{CoreComponents, button: 1}]
+  def function, do: &Header.header/1
+  def imports, do: [{Button, button: 1}]
 
   def variations do
     [

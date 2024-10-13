@@ -1,4 +1,4 @@
-defmodule Storybook.CoreComponents.Table do
+defmodule Storybook.BulmaComponents.Table do
   use PhoenixStorybook.Story, :component
   alias BulmaComponents.Table
 

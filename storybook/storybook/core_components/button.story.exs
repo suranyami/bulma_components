@@ -1,8 +1,14 @@
-defmodule Storybook.CoreComponents.Button do
+defmodule Storybook.BulmaComponents.Button do
   use PhoenixStorybook.Story, :component
   alias BulmaComponents.{Button, Colors}
+
   alias Phoenix.Naming
-  def imports, do: [{BulmaComponents.Icon, [icon: 1]}]
+
+  def imports,
+    do: [
+      {BulmaComponents.Colors, [theme: 1]},
+      {BulmaComponents.Icon, [icon: 1]}
+    ]
 
   def function, do: &Button.button/1
 

@@ -1,11 +1,5 @@
 defmodule BulmaComponents.Navbar do
-  @moduledoc """
-  Button component.
-  """
   use Phoenix.Component
-  # use BulmaComponents, :verified_routes
-
-  # def imports, do: [{BulmaComponents.Icon, [icon: 1]}]
 
   @doc """
   Renders a navbar.

@@ -1,4 +1,4 @@
-defmodule Storybook.CoreComponents.Icon do
+defmodule Storybook.BulmaComponents.Icon do
   use PhoenixStorybook.Story, :component
   alias BulmaComponents.{Colors, Icon}
 

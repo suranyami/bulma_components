@@ -10,10 +10,20 @@ by adding `bulma_components` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:bulma_components, "~> 0.1.0"}
+    {:bulma_components, "~> 0.2.1"}
   ]
 end
 ```
+
+## Working with `gettext`
+
+You will need to add the following config into your `config.exs` file:
+
+```elixir
+config :bulma_components, gettext_backend: Myapp.Gettext
+```
+
+This is so we can use `Gettext` in the `flash` messages, `submit` buttons, etc.
 
 ## Contributing
 

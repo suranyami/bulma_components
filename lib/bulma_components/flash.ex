@@ -3,7 +3,6 @@ defmodule BulmaComponents.Flash do
   Renders flash notices.
   """
   use Phoenix.Component
-
   alias Phoenix.LiveView.JS
 
   import BulmaComponents.Icon
@@ -14,7 +13,7 @@ defmodule BulmaComponents.Flash do
 
   ## Examples
 
-      <.flash kind={:info} flash={@flash} />
+      flash kind={:info} flash={@flash} />
       <.flash kind={:info} phx-mounted={show("#flash")}>Welcome Back!</.flash>
   """
   attr :id, :string, doc: "the optional id of flash container"
