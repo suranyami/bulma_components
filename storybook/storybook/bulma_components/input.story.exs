@@ -20,7 +20,6 @@ defmodule Storybook.BulmaComponents.Input do
         color: "primary",
         icon: "font",
         icon_color: "error",
-        icon_size: :small,
         icon_align: :left,
         errors: ["This is an error message"]
       }
@@ -31,7 +30,6 @@ defmodule Storybook.BulmaComponents.Input do
         color: "danger",
         icon: "lock",
         icon_color: "danger",
-        icon_size: :small,
         icon_align: :left,
         type: "password"
       }
@@ -42,33 +40,29 @@ defmodule Storybook.BulmaComponents.Input do
         color: "info",
         icon: "calendar",
         icon_color: "info",
-        icon_size: :small,
         icon_align: :left,
         type: "date"
       }
-    ]
-
-    # [:password, %{icon: "lock"}],
-    # [:email, %{value: "fred@example.com", icon: "check", color: "link"}],
-    # [:textarea, %{icon: "envelope", color: "info", rows: 4}],
-    # [:number, %{}],
-    # [:date, %{icon: "calendar"}],
-    # [:color, %{icon: "paintbrush"}],
-    # [:checkbox, %{}],
-    # [
-    #   :select,
-    #   %{
-    #     icon: "globe",
-    #     options: ["Option 1", "Option 2", "Option 3"]
-    #   }
-    # ],
-    # [:file, %{icon: "upload"}],
-    # [:radio, %{icon: "check"}],
-    # [:range, %{icon: "sliders"}],
-    # [:search, %{icon: "search"}],
-    # [:tel, %{icon: "phone"}],
-    # [:url, %{icon: "link"}],
-    # [:datetime, %{icon: "calendar"}]
+    ],
+    [:"datetime-local", %{icon: "calendar"}],
+    [:email, %{value: "fred@example.com", icon: "envelope", color: "link"}],
+    [:textarea, %{color: "info", rows: 4}],
+    [:number, %{}],
+    [:color, %{icon: "paintbrush"}],
+    [:checkbox, %{}],
+    [
+      :select,
+      %{
+        icon: "globe",
+        options: ["Option 1", "Option 2", "Option 3"]
+      }
+    ],
+    [:file, %{icon: "upload"}],
+    [:radio, %{icon: "check"}],
+    [:range, %{icon: "sliders"}],
+    [:search, %{icon: "search"}],
+    [:tel, %{icon: "phone"}],
+    [:url, %{icon: "link"}]
   ]
 
   def story_vars do

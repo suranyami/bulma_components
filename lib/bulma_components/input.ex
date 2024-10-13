@@ -55,7 +55,7 @@ defmodule BulmaComponents.Input do
   attr :icon_color, :string, default: nil, doc: "the color of the icon"
 
   attr :icon_size, :atom,
-    default: nil,
+    default: :small,
     values: [:small, nil, :medium, :large],
     doc: "the icon size"
 
@@ -100,7 +100,7 @@ defmodule BulmaComponents.Input do
         </label>
 
         <.icon :if={@icon} name={@icon} size={@icon_size} align={@icon_align} color={@icon_color} />
-        <.error_icon errors={@errors} />
+        <.error_icon :if={@errors != []} errors={@errors} />
       </div>
       <.error :for={msg <- @errors}><%= msg %></.error>
     </div>
@@ -121,7 +121,7 @@ defmodule BulmaComponents.Input do
         </div>
 
         <.icon :if={@icon} name={@icon} size={@icon_size} align={@icon_align} color={@icon_color} />
-        <.error_icon errors={@errors} />
+        <.error_icon :if={@errors != []} errors={@errors} />
       </div>
       <.error :for={msg <- @errors}><%= msg %></.error>
     </div>
@@ -138,7 +138,7 @@ defmodule BulmaComponents.Input do
         </textarea>
 
         <.icon :if={@icon} name={@icon} size={@icon_size} align={@icon_align} color={@icon_color} />
-        <.error_icon errors={@errors} />
+        <.error_icon :if={@errors != []} errors={@errors} />
       </div>
       <.error :for={msg <- @errors}><%= msg %></.error>
     </div>
@@ -161,7 +161,7 @@ defmodule BulmaComponents.Input do
         />
 
         <.icon :if={@icon} name={@icon} size={@icon_size} align={@icon_align} color={@icon_color} />
-        <.icon :if={@errors != []} name="exclamation-triangle" align={:right} color="danger" />
+        <.error_icon :if={@errors != []} errors={@errors} />
       </div>
       <.error :for={msg <- @errors}><%= msg %></.error>
     </div>

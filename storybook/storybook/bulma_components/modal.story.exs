@@ -25,11 +25,7 @@ defmodule Storybook.BulmaComponents.Modal do
       %Variation{
         id: :default,
         slots: [
-          """
-          <div class='block'>
-            Modal body
-          </div>
-          """
+          "<div class='block'>Modal body</div>"
         ]
       }
     ]
