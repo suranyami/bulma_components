@@ -32,7 +32,7 @@ defmodule Storybook.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:bulma_components, path: "../"},
+      {:bulma_components, path: Path.expand("../", __DIR__)},
       {:credo, "~> 1.7"},
       {:dart_sass, "~> 0.7", runtime: Mix.env() == :dev},
       {:dns_cluster, "~> 0.1.1"},

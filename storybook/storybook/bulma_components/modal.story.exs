@@ -1,5 +1,6 @@
 defmodule Storybook.BulmaComponents.Modal do
   use PhoenixStorybook.Story, :component
+  import BulmaComponents.Modal, only: [modal: 1]
 
   def function, do: &BulmaComponents.Modal.modal/1
 

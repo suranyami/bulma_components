@@ -1,6 +1,6 @@
 defmodule Storybook.BulmaComponents.List do
   use PhoenixStorybook.Story, :component
-  alias BulmaComponents.List
+  import BulmaComponents.List, only: [list: 1]
 
   def function, do: &List.list/1
   def imports, do: [{List, [list: 1]}]
